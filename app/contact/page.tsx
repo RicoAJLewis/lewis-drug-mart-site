@@ -17,7 +17,7 @@ export default function Contact() {
     <>
       <PageHero
         title="Contact Us"
-        subtitle="We're here to help. Reach out with questions, refill requests, or just to say hello."
+        subtitle="We&apos;re here to help. Reach out with questions, refill requests, or just to say hello."
       />
 
       {/* Quick Contact Info */}
@@ -93,7 +93,7 @@ export default function Contact() {
             Prefer to Call?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Give us a call and speak directly with our friendly pharmacy team. We're happy to help
+            Give us a call and speak directly with our friendly pharmacy team. We&apos;re happy to help
             with any questions or concerns.
           </p>
           <a

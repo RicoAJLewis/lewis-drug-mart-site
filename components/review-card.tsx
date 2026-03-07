@@ -22,7 +22,7 @@ export default function ReviewCard({ name, role, text, rating }: ReviewCardProps
       </div>
 
       {/* Review Text */}
-      <p className="text-gray-700 mb-6 leading-relaxed italic">"{text}"</p>
+      <p className="text-gray-700 mb-6 leading-relaxed italic">&quot;{text}&quot;</p>
 
       {/* Reviewer Info */}
       <div className="border-t border-gray-200 pt-4">

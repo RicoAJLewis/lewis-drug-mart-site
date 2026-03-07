@@ -14,14 +14,18 @@ interface FAQSectionProps {
   faqs: FAQ[]
   title?: string
   subtitle?: string
+  limit?: number
 }
 
 export default function FAQSection({
   faqs,
   title = 'Frequently Asked Questions',
   subtitle = 'Find answers to common questions about our services and pharmacy.',
+  limit,
 }: FAQSectionProps) {
   const [openId, setOpenId] = useState<number | null>(null)
+
+  const items = typeof limit === 'number' ? faqs.slice(0, limit) : faqs
 
   const toggleFAQ = (id: number) => {
     setOpenId(openId === id ? null : id)
@@ -33,7 +37,7 @@ export default function FAQSection({
         <SectionHeading tag="Help & Support" title={title} subtitle={subtitle} />
 
         <div className="space-y-4 mt-12">
-          {faqs.map(faq => (
+          {items.map(faq => (
             <div
               key={faq.id}
               className="border border-gray-200 rounded-lg overflow-hidden hover:border-primary-300 transition-colors"

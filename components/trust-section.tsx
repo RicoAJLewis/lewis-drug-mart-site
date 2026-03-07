@@ -52,7 +52,7 @@ export default function TrustSection() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Community Heart</h3>
             <p className="text-gray-600">
-              Genuine care for your health and wellness. We're here for the long term.
+              Genuine care for your health and wellness. We&apos;re here for the long term.
             </p>
           </div>
         </div>

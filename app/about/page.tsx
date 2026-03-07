@@ -50,16 +50,16 @@ export default function About() {
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
                 Lewis Drug Mart has been serving the Barbados community with dedication and care.
-                We're more than just a pharmacy – we're a trusted local institution committed to
+                We&apos;re more than just a pharmacy – we&apos;re a trusted local institution committed to
                 your health and wellness.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our team, led by a knowledgeable and compassionate pharmacist, takes time to
-                understand each customer's needs. We believe in personalized service, genuine
+                understand each customer&apos;s needs. We believe in personalized service, genuine
                 interactions, and expert guidance that makes a real difference.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Every day, we're committed to making healthcare accessible, friendly, and
+                Every day, we&apos;re committed to making healthcare accessible, friendly, and
                 convenient for everyone in our community. Your health is our priority.
               </p>
               <Link

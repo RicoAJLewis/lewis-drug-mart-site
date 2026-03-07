@@ -37,7 +37,7 @@ export default function WhyChooseUs({ items }: WhyChooseUsProps) {
         <SectionHeading
           tag="Community Trust"
           title="Why Choose Lewis Drug Mart?"
-          subtitle="We're more than a pharmacy – we're your trusted health partner in the community."
+          subtitle="We&apos;re more than a pharmacy – we&apos;re your trusted health partner in the community."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">

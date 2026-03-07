@@ -100,7 +100,7 @@ export default function Reviews() {
             Had a Great Experience?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            We'd love to hear about your visit to Lewis Drug Mart. Your feedback helps us serve
+            We&apos;d love to hear about your visit to Lewis Drug Mart. Your feedback helps us serve
             you better and guides other community members.
           </p>
           <a

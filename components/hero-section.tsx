@@ -28,7 +28,7 @@ export default function HeroSection() {
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-            Friendly service. Trusted guidance. Convenient local care. We're here to support your health and wellness with compassionate, expert pharmacy services.
+            Friendly service. Trusted guidance. Convenient local care. We&apos;re here to support your health and wellness with compassionate, expert pharmacy services.
           </p>
 
           {/* Stats */}
