@@ -5,12 +5,12 @@ export const pharmacyInfo = {
   rating: 4.6,
   reviewCount: 77,
   phone: '+1 246-435-8090',
-  address: 'Highway 7, Bridgetown, Christ Church, Barbados',
+  address: 'Lewis Tower, Highway 7, Christ Church, Bridgetown District BB15156',
   email: 'info@lewisdrugmart.bb',
+  instagram: 'https://www.instagram.com/lewisdrugmart',
   latitude: 13.1939,
   longitude: -59.5432,
   accessible: true,
-  announcementText: 'Friendly service, trusted guidance, and convenient local care.',
   statusText: 'Open',
   closeTime: '5:30 PM',
 }
@@ -23,6 +23,21 @@ export const businessHours = [
   { day: 'Friday', open: '9:00 AM', close: '6:00 PM' },
   { day: 'Saturday', open: '10:00 AM', close: '4:00 PM' },
   { day: 'Sunday', open: 'Closed', close: '' },
+]
+
+// National/public holidays (local dates) where the business is closed.
+// Dates are YYYY-MM-DD in local Barbados calendar. Update as needed.
+export const nationalHolidays = [
+  '2026-01-01', // New Year's Day
+  '2026-01-21', // Errol Barrow Day
+  '2026-04-03', // Good Friday (2026)
+  '2026-04-06', // Easter Monday (2026)
+  '2026-05-01', // Labour Day
+  '2026-05-25', // Whit Monday / Pentecost Monday (2026)
+  '2026-08-01', // Emancipation Day
+  '2026-11-30', // Independence Day
+  '2026-12-25', // Christmas Day
+  '2026-12-26', // Boxing Day
 ]
 
 export const services = [

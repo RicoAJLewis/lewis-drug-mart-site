@@ -1,12 +1,12 @@
 'use client'
 
 import { Clock, MapPin, Phone, Accessibility } from '@/components/icons'
-import { pharmacyInfo, businessHours } from '@/lib/data'
-import { getCurrentDay, isOpen } from '@/lib/utils'
+import { pharmacyInfo, businessHours, nationalHolidays } from '@/lib/data'
+import { getCurrentDay, isOpenNow } from '@/lib/utils'
 
 export default function QuickInfoCards() {
   const currentDay = getCurrentDay()
-  const open = isOpen(businessHours, currentDay)
+  const open = isOpenNow(businessHours, nationalHolidays)
 
   return (
     <section className="py-12 md:py-16 bg-white">
@@ -21,7 +21,7 @@ export default function QuickInfoCards() {
               <div>
                 <p className="text-sm font-medium text-gray-600 mb-1">Hours Today</p>
                 <div className="flex items-center gap-2 mb-2">
-                  <span className={`inline-block w-2 h-2 rounded-full ${open ? 'bg-green-500' : 'bg-gray-400'}`}></span>
+                  <span className={`inline-block w-2 h-2 rounded-full ${open ? 'bg-primary-500' : 'bg-gray-400'}`}></span>
                   <p className="font-bold text-gray-900">{open ? 'Open' : 'Closed'}</p>
                 </div>
                 <p className="text-sm text-gray-600">
@@ -32,9 +32,9 @@ export default function QuickInfoCards() {
           </div>
 
           {/* Location Card */}
-          <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center text-white">
+              <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center text-white">
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
@@ -67,9 +67,9 @@ export default function QuickInfoCards() {
           </div>
 
           {/* Accessibility Card */}
-          <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center text-white">
+              <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center text-white">
                 <Accessibility className="w-6 h-6" />
               </div>
               <div>

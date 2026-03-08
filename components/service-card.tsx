@@ -34,7 +34,7 @@ export default function ServiceCard({ name, description, icon }: ServiceCardProp
       </div>
       <h3 className="text-xl font-bold text-gray-900 mb-2">{name}</h3>
       <p className="text-gray-600 leading-relaxed">{description}</p>
-      <div className="mt-4 w-0 h-1 bg-gradient-to-r from-primary-600 to-teal-600 rounded group-hover:w-12 transition-all duration-300"></div>
+      <div className="mt-4 w-0 h-1 bg-gradient-to-r from-primary-600 to-primary-700 rounded group-hover:w-12 transition-all duration-300"></div>
     </div>
   )
 }

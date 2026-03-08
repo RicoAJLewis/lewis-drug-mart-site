@@ -20,7 +20,7 @@ export default function Reviews() {
       />
 
       {/* Rating Overview */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-primary-50 to-teal-50">
+      <section className="py-16 md:py-20 bg-gradient-to-br from-primary-50 to-primary-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Average Rating */}
@@ -78,7 +78,7 @@ export default function Reviews() {
             {reviewHighlights.map((highlight, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-primary-50 to-teal-50 rounded-xl p-6 border border-primary-200"
+                className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 border border-primary-200"
               >
                 <div className="flex gap-3 items-start">
                   <div className="text-2xl">💬</div>
@@ -116,7 +116,7 @@ export default function Reviews() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-primary-600 to-teal-600">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-primary-600 to-primary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Join Our Community of Satisfied Customers

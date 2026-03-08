@@ -31,7 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="theme-color" content="#16a34a" />
+        <meta name="theme-color" content="#2563eb" />
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
       </head>
       <body className="flex flex-col min-h-screen">
         <AnnouncementBar />

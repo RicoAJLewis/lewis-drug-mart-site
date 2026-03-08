@@ -20,7 +20,7 @@ export default function ReviewsPreview({ testimonials }: ReviewsPreviewProps) {
       <TestimonialGrid testimonials={testimonials} limit={3} />
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-primary-600 to-teal-600 py-16">
+      <div className="bg-gradient-to-r from-primary-600 to-primary-700 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
             See Why Customers Trust Us

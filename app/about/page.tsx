@@ -2,6 +2,7 @@ import PageHero from '@/components/page-hero'
 import SectionHeading from '@/components/section-heading'
 import { ArrowRight, CheckCircle } from '@/components/icons'
 import Link from '@/components/next-link'
+import { BrandMark } from '@/components/icons'
 
 export const metadata = {
   title: 'About Us | Lewis Drug Mart',
@@ -73,10 +74,10 @@ export default function About() {
 
             {/* Image Placeholder */}
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary-100 to-teal-100 rounded-xl shadow-lg flex items-center justify-center">
+              <div className="aspect-square bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl shadow-lg flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-primary-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">
-                    LD
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-white">
+                    <BrandMark className="w-24 h-24" />
                   </div>
                   <p className="text-gray-700 font-semibold">Lewis Drug Mart</p>
                   <p className="text-sm text-gray-600">Community Pharmacy</p>
@@ -125,7 +126,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {[1, 2, 3].map(i => (
               <div key={i} className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-primary-200 to-teal-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-primary-200 to-primary-200 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-4xl">👤</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Team Member {i}</h3>
@@ -142,7 +143,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-primary-600 to-teal-600">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-primary-600 to-primary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Experience the Lewis Drug Mart Difference

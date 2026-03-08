@@ -5,9 +5,9 @@ interface BadgePillProps {
 
 const variantStyles = {
   primary: 'bg-primary-100 text-primary-700',
-  teal: 'bg-teal-100 text-teal-700',
+  teal: 'bg-primary-100 text-primary-700',
   accent: 'bg-accent-100 text-accent-700',
-  success: 'bg-green-100 text-green-700',
+  success: 'bg-primary-100 text-primary-700',
   neutral: 'bg-gray-100 text-gray-700',
 }
 

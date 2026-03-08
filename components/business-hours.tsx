@@ -1,7 +1,7 @@
 'use client'
 
 import { Clock } from '@/components/icons'
-import { getCurrentDay, isOpen } from '@/lib/utils'
+import { getCurrentDay, isOpenDay } from '@/lib/utils'
 
 interface Hours {
   day: string
@@ -29,7 +29,7 @@ export default function BusinessHours({ hours, title = 'Hours of Operation' }: B
       <div className="space-y-3">
         {hours.map(hour => {
           const isCurrentDay = hour.day === currentDay
-          const dayOpen = isOpen(hours, hour.day)
+          const dayOpen = isOpenDay(hours, hour.day)
 
           return (
             <div
@@ -46,7 +46,7 @@ export default function BusinessHours({ hours, title = 'Hours of Operation' }: B
               <div className="flex items-center gap-3">
                 {dayOpen ? (
                   <>
-                    <span className="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
+                    <span className="inline-block w-2 h-2 bg-primary-500 rounded-full"></span>
                     <span className={isCurrentDay ? 'font-bold text-gray-900' : 'text-gray-600'}>
                       {hour.open} – {hour.close}
                     </span>

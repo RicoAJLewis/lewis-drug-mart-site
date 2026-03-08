@@ -41,19 +41,19 @@ export default function Contact() {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Accessibility</h3>
                 <ul className="space-y-3 text-sm text-gray-700">
                   <li className="flex items-center gap-2">
-                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-primary-600 font-bold">✓</span>
                     Wheelchair accessible entrance
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-primary-600 font-bold">✓</span>
                     Accessible parking
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-primary-600 font-bold">✓</span>
                     Accessible restrooms
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-primary-600 font-bold">✓</span>
                     Friendly, patient service
                   </li>
                 </ul>

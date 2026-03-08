@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from '@/components/next-link'
-import { Menu, X, Phone, Map } from '@/components/icons'
+import { Menu, X, Phone, Map, BrandMark } from '@/components/icons'
 import { pharmacyInfo } from '@/lib/data'
 
 export default function Navbar() {
@@ -26,8 +26,8 @@ export default function Navbar() {
               className="flex-shrink-0 flex items-center gap-2 group"
               aria-label="Lewis Drug Mart Home"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:shadow-lg transition-shadow">
-                LD
+              <div className="w-10 h-10">
+                <BrandMark className="w-10 h-10" />
               </div>
               <span className="hidden sm:inline whitespace-nowrap font-bold text-gray-900">Lewis Drug Mart</span>
             </Link>

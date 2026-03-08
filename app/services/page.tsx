@@ -115,9 +115,9 @@ export default function Services() {
                   <div
                     className={`aspect-square bg-gradient-to-br rounded-xl shadow-lg flex items-center justify-center ${
                       service.id % 2 === 0
-                        ? 'from-primary-100 to-teal-100'
-                        : 'from-teal-100 to-accent-100'
-                    }`}
+                        ? 'from-primary-50 to-primary-100'
+                        : 'from-primary-50 to-accent-100'
+                    }`} 
                   >
                     <span className="text-6xl">💊</span>
                   </div>
@@ -161,7 +161,7 @@ export default function Services() {
               href="/contact"
               className="group block h-full"
             >
-              <div className="h-full bg-gradient-to-br from-primary-500 to-teal-500 rounded-xl shadow-lg p-8 text-white flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow cursor-pointer">
+              <div className="h-full bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl shadow-lg p-8 text-white flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow cursor-pointer">
                 <div className="text-6xl mb-6">🏥</div>
                 <h3 className="text-2xl font-bold mb-4">Ready to Experience Quality Care?</h3>
                 <p className="text-primary-100 mb-6">
