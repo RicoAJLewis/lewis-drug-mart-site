@@ -7,7 +7,7 @@ export const pharmacyInfo = {
   phone: '+1 246-435-8090',
   address: 'Lewis Tower, Highway 7, Christ Church, Bridgetown District BB15156',
   email: 'info@lewisdrugmart.bb',
-  instagram: 'https://www.instagram.com/lewisdrugmart',
+  instagram: 'https://www.instagram.com/lewis_drug_mart/',
   latitude: 13.1939,
   longitude: -59.5432,
   accessible: true,
