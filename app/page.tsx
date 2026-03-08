@@ -10,8 +10,16 @@ import { services, testimonials, whyChooseUs, faqs } from '@/lib/data'
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <QuickInfoCards />
+      <section
+        className="relative bg-cover bg-center bg-no-repeat overflow-hidden"
+        style={{ backgroundImage: "url('/images/hero.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
+        <div className="relative z-10">
+          <HeroSection />
+          <QuickInfoCards />
+        </div>
+      </section>
       <ServicesGrid services={services} limit={4} />
       <ReviewsPreview testimonials={testimonials} />
       <WhyChooseUs items={whyChooseUs} />
