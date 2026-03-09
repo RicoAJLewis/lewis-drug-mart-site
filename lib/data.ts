@@ -8,6 +8,7 @@ export const pharmacyInfo = {
   address: 'Lewis Tower, Highway 7, Christ Church, Bridgetown District BB15156',
   email: 'info@lewisdrugmart.bb',
   instagram: 'https://www.instagram.com/lewis_drug_mart/',
+  facebook: 'https://www.facebook.com/profile.php?id=100063554935145',
   latitude: 13.1939,
   longitude: -59.5432,
   accessible: true,
@@ -16,13 +17,13 @@ export const pharmacyInfo = {
 }
 
 export const businessHours = [
-  { day: 'Monday', open: '9:00 AM', close: '6:00 PM' },
-  { day: 'Tuesday', open: '9:00 AM', close: '6:00 PM' },
-  { day: 'Wednesday', open: '9:00 AM', close: '6:00 PM' },
-  { day: 'Thursday', open: '9:00 AM', close: '6:00 PM' },
-  { day: 'Friday', open: '9:00 AM', close: '6:00 PM' },
-  { day: 'Saturday', open: '10:00 AM', close: '4:00 PM' },
-  { day: 'Sunday', open: 'Closed', close: '' },
+  { day: 'Monday', open: '8:00 AM', close: '5:30 PM' },
+  { day: 'Tuesday', open: '8:00 AM', close: '5:30 PM' },
+  { day: 'Wednesday', open: '8:00 AM', close: '5:30 PM' },
+  { day: 'Thursday', open: '8:00 AM', close: '5:30 PM' },
+  { day: 'Friday', open: '8:00 AM', close: '5:30 PM' },
+  { day: 'Saturday', open: '9:00 AM', close: '3:00 PM' },
+  { day: 'Sunday', open: '9:00 AM', close: '12:00 PM' },
 ]
 
 // National/public holidays (local dates) where the business is closed.

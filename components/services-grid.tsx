@@ -28,7 +28,7 @@ export default function ServicesGrid({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading tag="What We Offer" title={title} subtitle={subtitle} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {displayServices.map(service => (
             <ServiceCard
               key={service.id}

@@ -28,7 +28,7 @@ const IconComponent = ({ icon }: { icon: string }) => {
 
 export default function ServiceCard({ name, description, icon }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl p-8 border border-gray-200 hover:border-primary-300 hover:shadow-lg transition-all duration-300 group">
+    <div className="bg-white rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-primary-300 hover:shadow-lg transition-all duration-300 group">
       <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
         <IconComponent icon={icon} />
       </div>

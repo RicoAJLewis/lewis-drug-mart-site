@@ -63,7 +63,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href={`tel:${pharmacyInfo.phone}`}
-                className="inline-flex items-center gap-2 px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-md hover:shadow-lg transform hover:scale-105"
+                className="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-6 sm:px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-md hover:shadow-lg transform hover:scale-105"
                 aria-label={`Call Lewis Drug Mart at ${pharmacyInfo.phone}`}
               >
                 <Phone className="w-5 h-5" />
@@ -73,7 +73,7 @@ export default function HeroSection() {
                 href={`https://maps.google.com/?q=${encodeURIComponent(pharmacyInfo.address)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-white/10 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-all shadow-md hover:shadow-lg"
+                className="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-6 sm:px-8 py-3 bg-white/10 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-all shadow-md hover:shadow-lg"
                 aria-label="Get directions to Lewis Drug Mart"
               >
                 <Map className="w-5 h-5" />
@@ -81,7 +81,7 @@ export default function HeroSection() {
               </a>
               <Link
                 href="/contact#refill"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-white/10 border-2 border-white/20 text-white/90 font-semibold rounded-lg hover:bg-white/20 transition-all shadow-sm hover:shadow-md"
+                className="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-6 sm:px-8 py-3 bg-white/10 border-2 border-white/20 text-white/90 font-semibold rounded-lg hover:bg-white/20 transition-all shadow-sm hover:shadow-md"
                 aria-label="Go to prescription refill form"
               >
                 Refill Prescription

@@ -2,7 +2,7 @@ import PageHero from '@/components/page-hero'
 import SectionHeading from '@/components/section-heading'
 import { ArrowRight, CheckCircle } from '@/components/icons'
 import Link from '@/components/next-link'
-import { BrandMark } from '@/components/icons'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'About Us | Lewis Drug Mart',
@@ -77,7 +77,7 @@ export default function About() {
               <div className="aspect-square bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl shadow-lg flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-white">
-                    <BrandMark className="w-24 h-24" />
+                    <Image src="/images/store-logo.jpg" alt="Lewis Drug Mart" width={96} height={96} className="rounded-full object-cover" />
                   </div>
                   <p className="text-gray-700 font-semibold">Lewis Drug Mart</p>
                   <p className="text-sm text-gray-600">Community Pharmacy</p>

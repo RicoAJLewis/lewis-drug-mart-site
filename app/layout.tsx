@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     description:
       'Your trusted community pharmacy in Barbados. Friendly service, expert guidance, and convenient care.',
   },
+  icons: {
+    icon: '/lewis-drug-mart-favicon.svg',
+  },
 }
 
 export default function RootLayout({
@@ -32,8 +35,8 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#2563eb" />
-        <link rel="icon" href="/favicon.svg" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
+        <link rel="icon" href="/lewis-drug-mart-favicon.svg" />
+        <link rel="apple-touch-icon" href="/lewis-drug-mart-favicon.svg" />
       </head>
       <body className="flex flex-col min-h-screen">
         <AnnouncementBar />

@@ -1,8 +1,10 @@
-'use client'
+"use client"
 
 import { useState, useEffect } from 'react'
 import Link from '@/components/next-link'
-import { Menu, X, Phone, Map, BrandMark } from '@/components/icons'
+import { Menu, X, Phone, Map } from '@/components/icons'
+import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { pharmacyInfo } from '@/lib/data'
 
 export default function Navbar() {
@@ -15,22 +17,34 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
 
+  const pathname = usePathname()
+  const isHome = pathname === '/' || pathname === ''
+
   return (
     <>
       <nav className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link
-              href="/"
-              className="flex-shrink-0 flex items-center gap-2 group"
-              aria-label="Lewis Drug Mart Home"
-            >
-              <div className="w-10 h-10">
-                <BrandMark className="w-10 h-10" />
-              </div>
-              <span className="hidden sm:inline whitespace-nowrap font-bold text-gray-900">Lewis Drug Mart</span>
-            </Link>
+            <div className="flex items-center gap-3">
+              <Link
+                href="/"
+                className="flex-shrink-0 flex items-center gap-2 group"
+                aria-label="Lewis Drug Mart Home"
+              >
+                <div className="w-[72px] h-[72px] flex items-center">
+                  <Image
+                    src="/images/store-logo.jpg"
+                    alt="Lewis Drug Mart"
+                    width={72}
+                    height={72}
+                    className="rounded-md object-cover"
+                    priority
+                  />
+                </div>
+                <span className="hidden sm:inline whitespace-nowrap font-bold text-gray-900 text-lg">Lewis Drug Mart</span>
+              </Link>
+            </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-1">
@@ -76,6 +90,16 @@ export default function Navbar() {
                 <Phone className="w-4 h-4" />
                 <span className="hidden lg:inline">Call Now</span>
               </a>
+              {isHome && (
+                <div className="flex items-center gap-2">
+                  <a href={pharmacyInfo.instagram} target="_blank" rel="noopener noreferrer" className="px-2 py-2 rounded-lg">
+                    <Image src="/images/social_instagram.png" alt="Instagram" width={22} height={22} className="object-contain" />
+                  </a>
+                  <a href={pharmacyInfo.facebook} target="_blank" rel="noopener noreferrer" className="px-2 py-2 rounded-lg">
+                    <Image src="/images/social_facebook.png" alt="Facebook" width={22} height={22} className="object-contain" />
+                  </a>
+                </div>
+              )}
               <a
                 href={`https://maps.google.com/?q=${encodeURIComponent(pharmacyInfo.address)}`}
                 target="_blank"
@@ -147,6 +171,16 @@ export default function Navbar() {
                   <Phone className="w-4 h-4" />
                   Call Now
                 </a>
+                {isHome && (
+                  <div className="flex items-center gap-3 px-4 py-2">
+                    <a href={pharmacyInfo.instagram} target="_blank" rel="noopener noreferrer">
+                      <Image src="/images/social_instagram.png" alt="Instagram" width={22} height={22} className="object-contain" />
+                    </a>
+                    <a href={pharmacyInfo.facebook} target="_blank" rel="noopener noreferrer">
+                      <Image src="/images/social_facebook.png" alt="Facebook" width={22} height={22} className="object-contain" />
+                    </a>
+                  </div>
+                )}
                 <a
                   href={`https://maps.google.com/?q=${encodeURIComponent(pharmacyInfo.address)}`}
                   target="_blank"

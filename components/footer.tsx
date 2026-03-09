@@ -1,5 +1,6 @@
 import Link from '@/components/next-link'
-import { Phone, Mail, MapPin, BrandMark, Instagram } from '@/components/icons'
+import { Phone, Mail, MapPin } from '@/components/icons'
+import Image from 'next/image'
 import { pharmacyInfo } from '@/lib/data'
 
 export default function Footer() {
@@ -12,8 +13,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10">
-                <BrandMark className="w-10 h-10" />
+              <div className="w-[60px] h-[60px] flex items-center">
+                <Image src="/images/store-logo.jpg" alt="Lewis Drug Mart" width={60} height={60} className="rounded-md object-cover" />
               </div>
               <span className="font-bold text-gray-900">{pharmacyInfo.name}</span>
             </div>
@@ -116,9 +117,6 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between text-sm">
             <p>&copy; {currentYear} {pharmacyInfo.name}. All rights reserved.</p>
             <div className="flex gap-4 mt-4 md:mt-0 items-center">
-              <a href={pharmacyInfo.instagram} target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:opacity-90">
-                <Instagram className="w-5 h-5" />
-              </a>
               <a href="#" className="hover:text-gray-900 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-gray-900 transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-gray-900 transition-colors">Accessibility</a>

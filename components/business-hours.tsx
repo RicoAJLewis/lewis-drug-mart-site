@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
 import { Clock } from '@/components/icons'
-import { getCurrentDay, isOpenDay } from '@/lib/utils'
+import { getCurrentDay, isOpenDay, isOpenNow, getTimeUntil } from '@/lib/utils'
 
 interface Hours {
   day: string
@@ -16,6 +16,8 @@ interface BusinessHoursProps {
 
 export default function BusinessHours({ hours, title = 'Hours of Operation' }: BusinessHoursProps) {
   const currentDay = getCurrentDay()
+  const nowOpen = isOpenNow(hours)
+  const timeInfo = getTimeUntil(hours)
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6">
@@ -23,7 +25,28 @@ export default function BusinessHours({ hours, title = 'Hours of Operation' }: B
         <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
           <Clock className="w-6 h-6 text-primary-600" />
         </div>
-        <h3 className="text-xl font-bold text-gray-900">{title}</h3>
+        <div>
+          <h3 className="text-xl font-bold text-gray-900">{title}</h3>
+          <div className="mt-1 text-sm">
+            {nowOpen ? (
+              <div className="flex items-center gap-3 text-sm text-green-600">
+                <span className="inline-block w-2 h-2 bg-green-500 rounded-full" />
+                <span className="font-medium">Open Now</span>
+                {timeInfo.until && (
+                  <span className="text-gray-600">• Business closes in {timeInfo.until.hours}h {timeInfo.until.minutes}m</span>
+                )}
+              </div>
+            ) : (
+              <div className="flex items-center gap-3 text-sm text-gray-700">
+                <span className="inline-block w-2 h-2 bg-gray-400 rounded-full" />
+                <span className="font-medium">Closed</span>
+                {timeInfo.nextOpen && (
+                  <span className="text-gray-600">• Opens {timeInfo.nextOpen.day} at {timeInfo.nextOpen.date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       <div className="space-y-3">

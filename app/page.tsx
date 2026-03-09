@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="relative bg-cover bg-center bg-no-repeat overflow-hidden"
+        className="relative bg-cover bg-center bg-no-repeat overflow-hidden min-h-screen"
         style={{ backgroundImage: "url('/images/hero.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
